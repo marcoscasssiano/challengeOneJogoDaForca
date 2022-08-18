@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+    <title>Jogo da Forca</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <a href="https://www.alura.com.br" class="logo" target="_blank"><img src="images/logo.png"
+                    alt="Logo da Alura"></a>
+            <div class="titulo">Jogo da Forca</div>
+        </h1>
+    </header>
+    <main>
+
+        <section id="menu-principal">
+            <div class="botoes">
+                <button id="iniciar">
+                    Começar a jogar
+                </button>
+                <button id="adicionarpalavra">
+                    Adicionar nova palavra
+                </button>
+            </div>
+        </section>
+
+        <section id="adicionar-palavra" class="invisivel">
+            <textarea name="entrada-texto" id="entrada-texto" placeholder="Digite uma palavra" maxlength="8"></textarea>
+            <p>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/box-important--v1.png" class="icon1" />Máx. de 8
+                letras
+            </p>
+            <div class="botoes-adicionar">
+                <button id="salvar">
+                    Salvar Palavra
+                </button>
+                <button id="cancelar">
+                    cancelar
+                </button>
+            </div>
+        </section>
+
+        <section id="tabuleiro" class="invisivel">
+            <div class="quadro">
+                <canvas width="350" height="400"></canvas>
+            </div>
+
+            <ul id="lista">
+
+            </ul>
+            <div id="div-letras" class="div-letras">
+
+                <button class="btn-letras" id="0" value="A">A</button>
+                <button class="btn-letras" id="1" value="B">B</button>
+                <button class="btn-letras" id="2" value="C">C</button>
+                <button class="btn-letras" id="3" value="D">D</button>
+                <button class="btn-letras" id="4" value="E">E</button>
+                <button class="btn-letras" id="5" value="F">F</button>
+                <button class="btn-letras" id="6" value="G">G</button>
+                <button class="btn-letras" id="7" value="H">H</button>
+                <button class="btn-letras" id="8" value="I">I</button>
+                <button class="btn-letras" id="9" value="J">J</button>
+                <button class="btn-letras" id="10" value="K">K</button>
+                <button class="btn-letras" id="11" value="L">L</button>
+                <button class="btn-letras" id="12" value="M">M</button>
+                <button class="btn-letras" id="13" value="N">N</button>
+                <button class="btn-letras" id="14" value="O">O</button>
+                <button class="btn-letras" id="15" value="P">P</button>
+                <button class="btn-letras" id="16" value="Q">Q</button>
+                <button class="btn-letras" id="17" value="R">R</button>
+                <button class="btn-letras" id="18" value="S">S</button>
+                <button class="btn-letras" id="19" value="T">T</button>
+                <button class="btn-letras" id="20" value="U">U</button>
+                <button class="btn-letras" id="21" value="V">V</button>
+                <button class="btn-letras" id="22" value="W">W</button>
+                <button class="btn-letras" id="23" value="X">X</button>
+                <button class="btn-letras" id="24" value="Y">Y</button>
+                <button class="btn-letras" id="25" value="Z">Z</button>
+            </div>
+            <div class="botoes-adicionar">
+                <button id="novoJogo">
+                    Novo jogo
+                </button>
+                <button id="desistir">
+                    Desistir
+                </button>
+            </div>
+            <div class="letrasErradas">
+                <h2>Letras Erradas:</h2>
+            </div>
+            <input type="text" class="texto" autofocus>
+        </section>
+    </main>
+   
+    <footer>
+        
+        <a href="https://www.linkedin.com/in/marcos-cassiano-66a54a171/" class="copyright">&copy; Desenvolvidor por Marcos Cassiano.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/forca.js"></script>
+</body>
+
+</html>
